@@ -1,12 +1,13 @@
-@import './variables';
-@import './card';
-@import './stars';
+@import 'variables';
+@import 'card';
+@import 'stars';
 
-html {
-  font-family: $font-main;
+* {
+  box-sizing: border-box;
 }
 
 body {
   margin: 0;
-  font-family: $font-main;
+  padding: 20px;
+  font-family: $font-family;
 }
