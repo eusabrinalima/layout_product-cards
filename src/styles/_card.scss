@@ -39,14 +39,14 @@
   &__rating {
     display: flex;
     justify-content: space-between;
-    align-items: center;
-    height: 16px;
+    align-items: flex-end;
     margin-bottom: 24px;
   }
 
   &__reviews {
     font-size: 10px;
     line-height: 14px;
+    font-weight: 400;
     color: $text-color;
   }
 
@@ -76,7 +76,7 @@
     align-items: center;
     height: 40px;
     border: 1px solid $accent-color;
-    border-radius: 4px;
+    border-radius: 5px;
     font-size: 14px;
     line-height: 16px;
     font-weight: 700;
