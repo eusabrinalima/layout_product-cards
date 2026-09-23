@@ -3,11 +3,12 @@
   display: flex;
   flex-direction: column;
   width: $card-width;
-  padding: 32px 16px 16px;
+  padding: $card-padding-top $card-padding-x $card-padding-bottom;
   border: 1px solid $border-color;
   border-radius: 4px;
   background-color: $white-color;
   font-family: $font-family;
+  color: $text-color;
 
   &__photo {
     display: block;
@@ -22,24 +23,23 @@
 
   &__title {
     margin: 0 0 4px;
-    color: $text-color;
     font-size: 12px;
-    font-weight: 500;
     line-height: 18px;
+    font-weight: 500;
   }
 
   &__code {
     margin: 0 0 16px;
-    color: $secondary-color;
     font-size: 10px;
-    font-weight: 400;
     line-height: 14px;
+    font-weight: 400;
+    color: $secondary-color;
   }
 
   &__rating {
     display: flex;
-    align-items: center;
     justify-content: space-between;
+    align-items: center;
     height: 16px;
     margin-bottom: 24px;
   }
@@ -47,50 +47,47 @@
   &__reviews {
     font-size: 10px;
     line-height: 14px;
-    font-weight: 400;
     color: $text-color;
   }
 
   &__price {
     display: flex;
-    align-items: center;
     justify-content: space-between;
+    align-items: center;
     margin-bottom: 16px;
   }
 
   &__price-label {
-    color: $secondary-color;
     font-size: 12px;
     line-height: 18px;
+    color: $secondary-color;
   }
 
   &__price-value {
-    color: $text-color;
     font-size: 16px;
-    font-weight: 700;
     line-height: 18px;
+    font-weight: 700;
   }
 
   &__buy {
     box-sizing: border-box;
     display: flex;
-    align-items: center;
     justify-content: center;
-    width: 100%;
+    align-items: center;
     height: 40px;
     border: 1px solid $accent-color;
     border-radius: 4px;
-    color: $white-color;
-    background-color: $accent-color;
     font-size: 14px;
-    font-weight: 700;
     line-height: 16px;
+    font-weight: 700;
     text-align: center;
     text-transform: uppercase;
     text-decoration: none;
+    color: $white-color;
+    background-color: $accent-color;
     transition:
-      background-color 0.3s,
-      color 0.3s;
+      color 0.3s,
+      background-color 0.3s;
 
     &:hover {
       color: $accent-color;
